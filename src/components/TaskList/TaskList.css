@@ -14,7 +14,6 @@
 
 #create-button {
 	position: absolute;
-	left: 85%;
 	font-size: 14px;
 	margin: 15px;
 	border: none;
@@ -28,6 +27,7 @@
 
 .listHeader {
 	text-align: center;
+
 }
 
 .createTaskHeader {

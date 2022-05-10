@@ -119,23 +119,26 @@ function Timer({
 
 	return (
 		<div className="timer-container">
+			<div className='d-flex justify-content-start w-100' >
+			<h1 className='my-4 ms-4 text-danger text-left fw-bold'>Pomodoro</h1>
+			</div>
 			<div className="clock-container">
-				<div className="message-container">{isBreak ? 'Break' : 'Work'}</div>
-				<div className="time-container">
+				<div className="message-container py-4">{isBreak ? 'Break' : 'Work'}</div>
+				<div className="time-container pt-5">
 					{displayMinutes}m {displaySeconds}s
 				</div>
 			</div>
 
-			<div className="buttons-container">
-				<button className="timer-buttons" onClick={toggleTimer}>
+			<div className="buttons-container ">
+				<button className="timer-buttons hover mx-5" onClick={toggleTimer}>
 					{isActive ? (
 						<i className="fa-solid fa-pause" />
 					) : (
-						<i className="fa-solid fa-play" />
+						<i className="fa-solid fa-hourglass" />
 					)}
 				</button>
 
-				<button className="timer-buttons" onClick={resetButton}>
+				<button className="timer-buttons hover mx-5" onClick={resetButton}>
 					<i className="fa-solid fa-rotate-right"></i>
 				</button>
 			</div>

@@ -33,15 +33,15 @@ function Task({
 	return (
 		<li className="taskList">
 			{task.name}
-			<div className="button-container">
-				<button className="button" onClick={combineModuleAndTask}>
+			<div className="button-container py-2">
+				<button className="button hover" onClick={combineModuleAndTask}>
 					<i className="fa-solid fa-pen-to-square"></i>
 				</button>
-				<button className="button" type="button" onClick={handleDeleteSubmit}>
+				<button className="button hover" type="button" onClick={handleDeleteSubmit}>
 					<i className="fa-solid fa-trash-can"></i>
 				</button>
-				<button className="button" onClick={bringTimer}>
-					<i className="fa-solid fa-clock-rotate-left"></i>
+				<button className="button hover" onClick={bringTimer}>
+					<i className="fa-solid fa-play"></i>
 				</button>
 			</div>
 		</li>

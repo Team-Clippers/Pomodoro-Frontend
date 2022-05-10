@@ -11,6 +11,7 @@
 	border: 2px solid black;
 	border-bottom: none;
 	height: 100%;
+	top: 200px;
 }
 
 .clock-container {
@@ -24,11 +25,12 @@
 	background-color: var(--gray);
 	color: var(--dark);
 	position: relative;
+	border: 5px solid red;
 }
 
 .message-container {
 	position: absolute;
-	top: 15%;
+	top: 100px;
 }
 
 .timer-buttons {

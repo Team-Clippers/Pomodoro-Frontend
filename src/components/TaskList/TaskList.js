@@ -43,10 +43,11 @@ function TaskList({ setCurrentTimer, setAcceptChange }) {
 			{editModalVisible && (
 				<EditForm setEditModalVisible={setEditModalVisible} data={specificTask} getPoms={getPoms}/>
 			)}
-			<button id="create-button">
+			<button id="create-button" className="mt-4 ms-5 p-1 hover">
 				<i className="fa-solid fa-plus" onClick={createModalToggle}></i>
 			</button>
-			<h2 className="listHeader">Task List</h2>
+			<h2 className="listHeader py-4">Task List</h2>
+			
 			<div className="list-container">
 				<ul className="tasklist-list">
 					{data.map((task) => {
@@ -60,6 +61,7 @@ function TaskList({ setCurrentTimer, setAcceptChange }) {
 								getPoms={getPoms}
 								setCurrentTimer={setCurrentTimer}
 								setAcceptChange={setAcceptChange}
+								
 							/>
 						);
 					})}

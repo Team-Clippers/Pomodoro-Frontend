@@ -14,7 +14,7 @@ function Metrics({ pomsComplete, breaksCounter, session }) {
 	}, [session, breaksCounter]);
 	return (
 		<div className="metrics-container">
-			<h2 className="metricsHeader">Metrics Container</h2>
+			<h2 className="metricsHeader h2 py-4">Timer Metrics</h2>
 			<div className="stats-container">
 				<ul className="stats-ul-container">
 					<li className="individual-stat">
